@@ -12,7 +12,8 @@ const RequestCodeButton = ({ questionId, userId }) => {
     setError('');
 
     try {
-      await axios.post('http://localhost:5000/api/notifications/request-code', { questionId, userId });
+      //await axios.post('http://localhost:5000/api/notifications/request-code', { questionId, userId });
+      await axios.post('https://vercel.com/yaalu18s-projects/code-reviewer-server/api/notifications/request-code', { questionId, userId });
       alert('Notification sent successfully');
     } catch (err) {
       setError('Failed to send notification');

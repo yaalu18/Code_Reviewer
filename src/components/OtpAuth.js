@@ -2,7 +2,8 @@
 import { useState } from 'react';
 import axios from 'axios';
 // Ensure this is not setting the wrong base URL
-axios.defaults.baseURL = 'http://localhost:5000';  
+//axios.defaults.baseURL = 'http://localhost:5000';  
+axios.defaults.baseURL = 'https://vercel.com/yaalu18s-projects/code-reviewer-server';  
 const OtpAuth = ({ onSuccess }) => {
   const [email, setEmail] = useState('');
   const [otp, setOtp] = useState('');
